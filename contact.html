@@ -59,6 +59,45 @@
       bottom: 0;
       width: 100%;
     }
+    section {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
   </style>
 </head>
 <body>
@@ -77,11 +116,20 @@
 
   <main>
     <h2>contact Us</h2>
+    <section id="contact">
+      <form action="https://formspree.io/f/mnqendbp" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
 
-    <p>We value your interest in our school and welcome any inquiries you may have. If you have questions regarding our academic programs, admissions process, extracurricular activities, or any other aspects of our school, please feel free to contact us. Our dedicated team is here to assist you and provide the information you need.</p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
 
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
 
-    <p>Thank you for being a part of our school community. Feel free to explore our website to learn more about our programs, events, and the overall educational experience we offer.</p>
+          <button type="submit">Submit</button>
+      </form>
+  </section>
   </main>
 <div class="text-box">
     <p style="font-size: 15px;">information:-<br>

@@ -51,6 +51,29 @@
       bottom: 0;
       width: 100%;
     }
+    #newsSquare {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            background-color: #093634;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            margin: 2em auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
   </style>
 </head>
 <body>
@@ -68,10 +91,31 @@
   </nav>
 
   <main>
-    <h2>Welcome to Our School</h2>
+    <h2 style="font-size: medium;">Welcome to Our School</h2>
       <!-- Add more student images as needed -->
+      <div id="newsSquare">
+        <h2>Alert!!</h2>
+        <p>Join us on January 26th as we celebrate Republic Day at our school! Engage in patriotic festivities, cultural performances, and educational activities. Don't miss the excitement!
+
+
+
+
+
+        </p>
+    </div>
+
+    <script>
+        // You can use JavaScript to dynamically update the news content if needed
+        setTimeout(() => {
+            document.getElementById('newsSquare').innerHTML = `
+                <h2>About Web</h2>
+                <p>Here you get:<br>Textbook pdf <br>Contact detail<br>Enquery form</p>
+            `;
+        }, 5000); // Change content after 5 seconds (5000 milliseconds)
+    </script>
     </div>
   </main>
+  
   <footer>
     &copy; 2024 ambition public school. All Rights Reserved.
   </footer>

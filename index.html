@@ -52,10 +52,9 @@
       width: 100%;
     }
     #newsSquare {
-            width: auto;
-            max-width: 300px;
-            height: auto;
-            background-color: #247c77;
+            width: AUTO;
+            max-width: 300PX;
+            background-color: #274C77;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -94,24 +93,29 @@
     <h2 style="font-size: medium;">Welcome to Our School</h2>
       <!-- Add more student images as needed -->
       <div id="newsSquare">
-        <h2>Alert!!</h2>
-        <p>Join us on January 26th as we celebrate Republic Day at our school! Engage in patriotic festivities, cultural performances, and educational activities. Don't miss the excitement!
-
-
-
-
-
-        </p>
+        <h2>ANNOUNCEMENT</h2>
+        <p id="newsText">Join us on January 26th as we celebrate Republic Day at our school! Engage in patriotic festivities, cultural performances,</p>
     </div>
 
     <script>
-        // You can use JavaScript to dynamically update the news content if needed
-        setTimeout(() => {
-            document.getElementById('newsSquare').innerHTML = `
-                <h2>About Web</h2>
-                <p>Here you get:<br>Textbook pdf <br>Contact detail<br>Enquery form</p>
-            `;
-        }, 5000); // Change content after 5 seconds (5000 milliseconds)
+        // You can use JavaScript to dynamically update the news content every 4 seconds
+        const newsTextElement = document.getElementById('newsText');
+
+        const newsContent = [
+            "Breaking News: School Achieves Excellence in Academics!",
+            "Upcoming Event: 26 january function.",
+            "Rule: follow all the instruction given by Sir/Mam.",
+            // Add more news items as needed
+        ];
+
+        let currentIndex = 0;
+
+        function changeNews() {
+            newsTextElement.innerHTML = newsContent[currentIndex];
+            currentIndex = (currentIndex + 1) % newsContent.length;
+        }
+
+        setInterval(changeNews, 4000); // Change news every 4 seconds (4000 milliseconds)
     </script>
     </div>
   </main>

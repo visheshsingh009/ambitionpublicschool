@@ -73,6 +73,44 @@
                 opacity: 1;
             }
         }
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: transparent; /* Set the background to transparent */
+    }
+
+    #overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      z-index: 1;
+    }
+
+    #popup {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #close-btn {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -88,7 +126,24 @@
     <a href="textbook.html">textbook</a>
     <a href="contact.html">Contact</a>
   </nav>
+  <div id="overlay">
+    <div id="popup">
+      <p style="color: #333;">Admission open now! Apply today.</p>
+      <button id="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const overlay = document.getElementById("overlay");
+      overlay.style.display = "flex"; // Display the overlay on page load
+    });
+
+    function closePopup() {
+      const overlay = document.getElementById("overlay");
+      overlay.style.display = "none";
+    }
+  </script>
   <main>
     <h2 style="font-size: medium;">Welcome to Our School</h2>
       <!-- Add more student images as needed -->

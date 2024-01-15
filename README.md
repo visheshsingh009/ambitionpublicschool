@@ -7,3 +7,4 @@ our school is here now!!!!
 ![3image](https://github.com/visheshsingh009/ambitionpublicschool/assets/156420671/19998f89-9a5c-4218-b989-461dbb0299a5)
 ![fb](https://github.com/visheshsingh009/ambitionpublicschool/assets/156420671/7c666225-7cea-49c3-a02b-d7d7dfb32de2)
 ![insta](https://github.com/visheshsingh009/ambitionpublicschool/assets/156420671/43c33788-1a7d-4232-b709-67c4ebb60469)
+![yt](https://github.com/visheshsingh009/ambitionpublicschool/assets/156420671/4f362e26-cf46-48dd-9c3e-c3ca20930d09)
